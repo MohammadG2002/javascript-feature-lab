@@ -5,7 +5,7 @@ let a = 1;
 console.log(a);
 
 // BigInt
-a = BigInt(11231242342342341231231231);
+a = BigInt(13e50);
 console.log(a);
 
 // String
@@ -41,5 +41,23 @@ a = () => {};
 console.log(a);
 
 // Symbol
-a = Symbol("id");
+a = Symbol();
 console.log(a);
+
+// Symbol understanding
+const id1 = Symbol("b");
+const id2 = Symbol("b");
+
+const id = {
+  //   id1: 2, // Symbols not used
+  //   id2: 1, // Symbols not used
+  [id1]: 2, // Symbols used
+  [id2]: 2, // Symbols used
+};
+
+console.log(id1); // Symbol(b)
+console.log(id2); // Symbol(b)
+console.log(id1 == id2); // false
+console.log(id1 === id2); // false
+console.log(id.id1 === id.id2); // true => both undefined // cannot access symbol keys with dot notation.
+console.log(id[id1] === id[id2]); // true => 2 === 2
