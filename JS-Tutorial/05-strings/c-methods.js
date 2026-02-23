@@ -161,8 +161,9 @@ console.log(a.replaceAll(/World/gi, "there")); // ES2021 - Doesn't work on inter
 // String splitting - Converts string into array
 // ============================================================================= //
 
-// split()
 a = "Hello World";
+
+// split()
 console.log(a.split(" ")); // ["Hello", "World"]
 console.log(a.split(/ /)); // ["Hello", "World"]
 console.log(a.split("")); // ["H", "e", "l", "l","o", " ", "W", "o","r", "l", "d"]
