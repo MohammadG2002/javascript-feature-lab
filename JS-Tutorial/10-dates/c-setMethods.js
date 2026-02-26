@@ -3,34 +3,34 @@
 const a = new Date("2025-03-25");
 console.log(a); // 2025-03-25T00:00:00.000Z
 
-// setFullYear() - sets year
+// setFullYear() - setFullYear(year) - sets year
 a.setFullYear(2026);
 console.log(a); // 2026-03-25T00:00:00.000Z
 
-// setMonth() - sets month ( )
+// setMonth() - setMonth(month) - sets month ( 0 to 11 )
 a.setMonth(4);
 console.log(a); // 2026-05-24T23:00:00.000Z
 
-// setDate() - sets day of the month -> ( 1 - 31 )
+// setDate() - setDate(day) - sets day of the month -> ( 1 - 31 )
 a.setDate(25);
 console.log(a); // 2026-05-24T23:00:00.000Z
 
-// setHours() - sets hours -> ( 0 to 23 )
+// setHours() - setHours(hour) sets hours -> ( 0 to 23 )
 a.setHours(12);
 console.log(a); // 2026-05-25T09:00:00.000Z
 
-// setMinutes() - sets minutes -> ( 0 to 59 )
+// setMinutes() - setMinutes(minute) - sets minutes -> ( 0 to 59 )
 a.setMinutes(32);
 console.log(a); // 2026-05-25T09:32:00.000Z
 
-// setSeconds() - sets seconds -> ( 0 to 59 )
+// setSeconds() - setSeconds(second) - sets seconds -> ( 0 to 59 )
 a.setSeconds(21);
 console.log(a); // 2026-05-25T09:32:21.000Z
 
-// setMilliseconds() - sets milliseconds -> ( 0 to 999 )
+// setMilliseconds() - setMilliseconds(milliseconds) - sets milliseconds -> ( 0 to 999 )
 a.setMilliseconds(247);
 console.log(a); // 2026-05-25T09:32:21.247Z
 
-// setTime() - sets time in milliseconds since January 1, 1970
+// setTime() - setTime(milliseconds) - sets time in milliseconds since January 1, 1970
 a.setTime(123);
 console.log(a); // 1970-01-01T00:00:00.123Z
